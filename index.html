@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Activate ESPN on your device easily with step-by-step instructions. Visit ESPN.com/activate to begin streaming your favorite sports and shows today.">
-
-    <meta name="keywords" content="espn.com/activate, espn.com/activate tv code, espn.com/activate code, espn.com/activate hulu, espn.com/activate disney plus">
-
-    
-    <title>Activate Your Espn account |espn.com/activate</title>
-
-    <!-- Google tag (gtag.js) -->
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1G8FTQV66"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -19,6 +11,17 @@
 
   gtag('config', 'G-P1G8FTQV66');
 </script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate Your Espn account - Espn.com/activate</title>
+  <meta name="description" content="Activate ESPN on your device easily with step-by-step instructions. Visit ESPN.com/activate to begin streaming your favorite sports and shows today.">
+  <meta name="keywords" content="espn.com/activate, espn.com/activate tv code, espn.com/activate code, espn.com/activate hulu, espn.com/activate disney plus">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Activate Your Espn account - espn.com/activate">
+  <meta property="og:description" content="Activate ESPN on your device easily with step-by-step instructions. Visit espn.com/activate to begin streaming your favorite sports and shows today.">
+  <link rel="icon" type="image/png" href="green_check_mark-removebg-preview.png">
+  <meta property="og:url" content="https://espncomactivate.github.io/">
+  
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         body {
@@ -26,88 +29,107 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #fff;
         }
-        #top {
+        header nav {
+            background-color: #000;
+            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: white;
-            height: 75px;
-            padding: 0 3rem;
-            opacity: 0.8;
-            transition: opacity 0.5s;
+            padding: 0px 20px;
         }
-        #top:hover {
-            opacity: 1;
+
+        header .logo {
+            font-size: 1.5rem;
         }
-        #logo img {
-            height: 50px;
-            border-radius: 10px;
-            margin-top: 15px;
+
+        header nav label i {
+            color: white;
+            align-items: center;
+            justify-content: center;
         }
-        nav ul {
+
+        header ul {
             display: flex;
-            margin-left: -10%;
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        nav ul li {
-            margin: 0 30px;
-            font-weight: bold;
+
+        header ul li {
+            margin-right: 20px;
         }
-        nav ul li a {
-            display: block;
-            padding: 4px 0;
-            font-family: Lato, sans-serif;
-            color: #2f3030;
+
+        header ul li a {
+            color: white;
             text-decoration: none;
-            text-transform: uppercase;
-            transition: transform 0.5s;
+            transition: color 0.3s;
         }
-        nav ul li a:hover {
-            transform: scale(1.1);
+
+        header ul li a:hover {
+            color: #560d0d;
         }
-        #cover-image {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh; /* Adjusted height */
+
+        header .checkbtn {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            display: none;
         }
-        #cover-image::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%; /* Adjusted to cover the whole height */
-            background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
-            z-index: 1;
+
+        header #check {
+            display: none;
         }
-        #cover-image img {
-            width: 100%;
-            height: 100%; /* Adjusted to cover the whole height */
-            object-fit: cover; /* Changed to cover the entire area */
-            position: relative;
-            z-index: 0;
+
+        @media (max-width: 768px) {
+            header .checkbtn {
+                display: block;
+                order: 1;
+                margin-right: 20px;
+            }
+
+            header ul {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                background-color: #D2042D;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s;
+            }
+
+            header ul li {
+                margin: 20px 0;
+            }
+
+            header ul li a {
+                font-size: 20px;
+            }
+
+            header #check:checked~ul {
+                right: 0;
+            }
         }
-    #button-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2; /* Ensure it is above the overlay */
+
+        #button-container {
             text-align: center;
+            padding: 40px;
+            background-color: #fff;
+            color: #333;
         }
         #button-container h1 {
-            color: #fff;
+            color: #333;
+            margin-bottom: 20px;
         }
         #button {
-            background-color: #fff;
+            background-color: #333;
             border: none;
-            color: #333;
+            color: #fff;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -173,38 +195,54 @@
         }
         
         a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition */
-  padding: 5px 10px; /* Padding around the link */
-  border-radius: 5px; /* Rounded corners */
-}
+          color: #333;
+          text-decoration: none;
+          transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+          padding: 5px 10px; /* Padding around the link */
+          border-radius: 5px; /* Rounded corners */
+        }
 
-a:hover {
+        a:hover {
+          text-decoration: none;
+        }
+        
+          footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-
-  text-decoration: none;
-}
+        footer p {
+            margin: 0;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="top">
-            <div id="logo">
-                <img src="green_check_mark-removebg-preview.png" alt="Logo">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div style="display: flex; padding-top: 10px;">
+                <img src="green_check_mark-removebg-preview.png" alt="Logo" height="50px" width="50px">
+                <h1 style="color: white; margin-top: 5px; margin-left: 10px;">Xfinity.com/authorize</h1>
             </div>
-        </div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <div id="cover-image">
-        <img src="ESPN-HOZ.jpg" alt="Cover Image">
-        <div id="button-container">
-            <h1>Activate Your Espn account |espn.com/activate</h1>
-        <button id="button"><a href="https://ww0.us?aHR0cHM6Ly9lc3BuY29tYWN0aXZhdGUuZ2l0aHViLmlv">Get Started</a></button>
-        </div>
+    <div id="button-container">
+        <h1>Activate Your Espn account - espn.com/activate</h1>
+        <button id="button"><a href="https://ww0.us?aHR0cHM6Ly9lc3BuY29tYWN0aXZhdGUuZ2l0aHViLmlv" style="color: #fff;">Get Started</a></button>
     </div>
     <div class="container">
         <h1>Activate Espn on Your Device</h1>
-        <p>  The term activation as used when you want to run an app for instance the ESPN app on your television means the process of tying the app on your device (the Vizio television set in this case) to an account with the service providers (ESPN in this case). Quite often, it includes going to a particular web address that could be espn. com/activate and typing a code that appears on your TV.
+        <p> The term activation as used when you want to run an app for instance the ESPN app on your television means the process of tying the app on your device (the Vizio television set in this case) to an account with the service providers (ESPN in this case). Quite often, it includes going to a particular web address that could be espn. com/activate and typing a code that appears on your TV.
         </p>
         <h2>Activating the ESPN App on Vizio TV</h2>
         <ol>
@@ -224,76 +262,51 @@ a:hover {
         
         
         
-        <h2>How to is activation ESPN ?</h2>
+        <h2>How do you Activate a ESPN on your device?</h2>
         <ol>
             
                 <ul>
                     <li><strong> Launch the ESPN App:</strong> Turn on your TV and go to the ESPN app. If it is not already installed, then it possibly could be downloaded from the app store of your TV.</li>
                     
-                    <li><strong>Get the Activation Code:</strong> The ESPN app once launched, will give you a code that will be required to activate the service. This code is generated for your device only and it allows connection of your TV to the ESPN accounts.</li>
-                    
-                    
-                    <li><strong>Visit the Activation Website:</strong> To begin the activation process, turn to the ESPN’s activating website which should be accessible on any device – a computer, a laptop or a mobile terminal that has Internet connection. Usually, this is espn. it can be com/activate, but it can also be different.</li>
+                    <li><strong>Get the Activation Code:</strong> The ESPN app once launched, will give you an activation code. Make a note of this code as it is needed for activation.</li>
+                    <li><strong>Go to espn.com/activate:</strong> On another device, such as a phone or computer, open a web browser and navigate to <b>espn.com/activate</b>.</li>
+                    <li><strong>Enter the Activation Code:</strong> Type the activation code that is displayed on your TV screen.</li>
+                    <li><strong>Sign In:</strong> Once the activation code is entered, you will be prompted to sign in with your ESPN account credentials. Follow the instructions on the screen.</li>
                 </ul>
-     
-            
+           
                 <ul>
-                    <li><strong>Enter the Activation Code:</strong> Interaction with the activation website will require you to put the activation code that appears on your television set’s screen.</li>
-                    
-                    <li><strong>Sign In (if required):</strong> If you are not logged in to your ESPN account just visit the activation website, and then enter your username and password for ESPN.</li>
+                    <li> Once the code is entered, the ESPN app on your Vizio TV will refresh, and you should be signed in and able to access ESPN content.</li>
                 </ul>
-      
-                <ul>
-                    <li><strong>Complete Activation:</strong> In case there are some other steps described on the activation website, you should follow them to finish the activation process. Once this is done, your ESPN app on your TV should update and you should be able to find the contents from ESPN.</li>
-                </ul>
-
             
-
-        <h2>How to log in to ESPN+</h2>
+        </ol>
+        <h2> Troubleshooting Tips</h2>
+        <p>Activation process is typically simple, yet you can face some common issues. In case you are not able to activate ESPN on your Vizio TV, check these troubleshooting tips:
+        </p>
         <ul>
-            <li><strong>Visit ESPN Website:</strong> On your computer or the mobile device that you are using, open your web browser then visit the ESPN website at www. espn. com.</li>
-            <li><strong>Navigate to ESPN+:</strong> This paragraph of the text will show how to access ESPN+ by navigating through the ESPN official website as follows: Normally it is placed in the top right corner of the page of print media.</li>
-            <li><strong>Click on "Log In":</strong>Once the ESPN+ page is opened, find ‘Log In” link or button. If you wish to continue, you can click on it to be redirected into the login page.</li>
-            
-                        <li><strong>Enter Your Credentials:</strong> On the log in page, every user keys in the email address and password related to his/her ESPN account. If you are not yet subscribed to ESPN+, that would require you to subscribe to it first.</li>
-                                    <li><strong>Access ESPN+ Content:</strong> After successful login, you should be able to watch ESPN+ content; live sports, exclusive shows and a whole lot more, depending on the package you subscribed to.</li>
-
+            <li><strong>Check Your Internet Connection:</strong> Ensure your TV is connected to the internet.</li>
+            <li><strong>Double-Check the Activation Code:</strong> Make sure you have entered the code correctly.</li>
+            <li><strong>Update the App:</strong> Make sure your ESPN app is up to date.</li>
+            <li><strong>Restart the App:</strong> Try closing and reopening the app.</li>
+            <li><strong>Contact ESPN Support:</strong> If you are still having issues, reach out to ESPN's customer support for help.</li>
         </ul>
-
-
-
-
-        <h2>Forgot Password:</h2>
-        <ul>
-            <li><strong>Visit ESPN Login Page:</strong> Type the following address on the address bar of your browser www. espn. com and placing the cursor on ‘Community’ and then move to the ‘Log In’ link on the right of the page.</li>
-            <li><strong>Forgot Your Password :</strong> Just below the login fields there is a hyperlink that says “Forgot Your Password?” Click on it.</li>
-            <li><strong>Enter Email Address:</strong> Next, you will need to input the email address for the ESPN account which you have. Go to it and click on ‘Submit’ button or ‘Continue’ button depending on the form.</li>
-        </ul>
-
-
-
-
-
-
+        <h2>FAQ</h2>
         <div class="faq">
-            <h2>Answers to Common Questions (FAQs)</h2>
-            <h3>What is espon.com/activate?</h3>
-            <p>Espon.com/activate is the official activation page for Epson products. By visiting this page, you can activate your Epson device, such as printers, scanners, and other Epson hardware, to ensure they are correctly registered and ready for use.</p>
-
-            <h3> Where can I find the activation code for my Epson product?</h3>
-            <p>The activation code is typically located in the packaging of your Epson product. It may be on a card, sticker, or within the instruction manual.</p>
-
-            <h3>What should I do if I can't find my activation code?</h3>
-            <p>If you cannot locate your activation code, check all packaging materials carefully. If it's still missing, contact Epson customer support for assistance. They can help you retrieve or issue a new activation code.</p>
-
-            <h3>Do I need an Epson account to activate my product on espon.com/activate?</h3>
-            <p>Yes, you will need to create an Epson account or log in to your existing account to complete the activation process. This ensures your product is registered to you and enables you to receive support and updates..</p>
-        </div>
-        
-            <div class="summary">
-            <h2>In Summary</h2>
-            <p>Activating your Epson product through espon.com/activate is a simple and essential step to ensure your device is registered and ready for optimal use. By following the straightforward activation process, you gain access to important updates, warranty information, and dedicated customer support. If you encounter any issues, Epson’s support team is readily available to assist you. Don’t forget to activate your product promptly to take full advantage of the benefits and services provided by Epson..</p>
+            <h3>Q: Can I activate ESPN without an account?</h3>
+            <p>A: No, you need an ESPN account to activate the app on your device.</p>
+            <h3>Q: What should I do if my activation code does not work?</h3>
+            <p>A: Double-check the code, ensure your internet connection is stable, and try again. If it still doesn't work, contact ESPN support.</p>
+            <h3>Q: Is there a cost to activate ESPN?</h3>
+            <p>A: While the activation process is free, accessing ESPN content typically requires a subscription.</p>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <footer>
+            <div class="text-center" style="margin-top: 20px;">
+                <center>
+                    <p><strong style="color: rgb(0, 0, 0); font-weight:100;">Disclaimer:</strong> This website is not associated with ESPN or any other services. We are an independent or third-party service provider providing support with our service packages.</p>
+                </center>
+
+            </div>
+        </footer>
 </body>
 </html>
